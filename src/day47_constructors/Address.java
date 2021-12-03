@@ -8,7 +8,19 @@ public class Address {
     private  String zipcode;
     private  String country = "USA";
 
-    @Override
+    //constructor - automatically called
+    public Address() {
+        System.out.println("Address constructor");
+        street = "123 unknown street";
+        city = "java city";
+        state = "ws";
+        zipcode = "000000";
+    }
+
+    //public Address(street, city, state, zipcode)
+
+
+
     public String toString(){
         return street + ", " + city +", "+state+" "+zipcode;
     }
